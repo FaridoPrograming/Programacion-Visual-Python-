@@ -1,0 +1,80 @@
+Python 3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+componentes =["diodo","capacitor","resistor"]
+type(componentes)
+<class 'list'>
+numeros = [1,3,5,7,11,13]
+numeros as n
+SyntaxError: invalid syntax
+print numeros
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
+print numeros
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
+numeros = [1,3,5,7,11,13]
+print (numeros)
+SyntaxError: multiple statements found while compiling a single statement
+print(numeros)
+[1, 3, 5, 7, 11, 13]
+numeros.remove(7)
+numeros.remove("7")
+Traceback (most recent call last):
+  File "<pyshell#9>", line 1, in <module>
+    numeros.remove("7")
+ValueError: list.remove(x): x not in list
+print(numeros)
+[1, 3, 5, 11, 13]
+numeros.remove("3")
+Traceback (most recent call last):
+  File "<pyshell#11>", line 1, in <module>
+    numeros.remove("3")
+ValueError: list.remove(x): x not in list
+print(numeros)
+[1, 3, 5, 11, 13]
+numeros.insert(1,"7")
+print (numeros)
+[1, '7', 3, 5, 11, 13]
+numeros.remove("7")
+print numeros
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
+SyntaxError: invalid syntax
+>>> 
+>>> print numerosprint numeros
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
+>>> print numeros
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
+>>> print (numeros)
+[1, 3, 5, 11, 13]
+>>> numeros.insert(0,7)
+>>> print(numeros)
+[7, 1, 3, 5, 11, 13]
+>>> numeros.remove(7)
+>>> print (numeros)
+[1, 3, 5, 11, 13]
+>>> numeros.insert (4,7)
+>>> print(numeros)
+[1, 3, 5, 11, 7, 13]
+>>> numeros.remove(7)
+>>> numeros.insert(3,7)
+>>> print (numeros)
+[1, 3, 5, 7, 11, 13]
+>>> elements["nombre",30,3.1416,[1,2,3]]
+Traceback (most recent call last):
+  File "<pyshell#31>", line 1, in <module>
+    elements["nombre",30,3.1416,[1,2,3]]
+NameError: name 'elements' is not defined
+}
+>>> elements=["nombre",30,3.1416,[1,2,3]]
+>>> print(elements)
+['nombre', 30, 3.1416, [1, 2, 3]]
+>>> type(elements)
+<class 'list'>
+>>> elements.remove(30)
+>>> print(elements)
+['nombre', 3.1416, [1, 2, 3]]
+>>> elements.insert(1,200)
+>>> print (elements)
+['nombre', 200, 3.1416, [1, 2, 3]]
+>>> elements.append(600)
+>>> print (elements)
+['nombre', 200, 3.1416, [1, 2, 3], 600]
