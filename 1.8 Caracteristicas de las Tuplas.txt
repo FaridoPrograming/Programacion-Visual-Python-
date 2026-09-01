@@ -1,0 +1,86 @@
+Python 3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+Tup1=(4,"a",5,9,10,23,"45",45)
+type(tup1)
+Traceback (most recent call last):
+  File "<pyshell#1>", line 1, in <module>
+    type(tup1)
+NameError: name 'tup1' is not defined. Did you mean: 'Tup1'?
+type(Tup1)
+<class 'tuple'>
+Tup2=([2,3,4],"a","nombre1",2,3.1416,56,("x","y","z"))
+primos=(2,3,5,7,11,13,17,23,29)
+print(Tup2[0])
+[2, 3, 4]
+print (Tup2[6])
+('x', 'y', 'z')
+print(Tup2[6][2])
+z
+print(Tup2[0][2])
+4
+tup2=([2,3,4("nombre","edad")],"a","nombre1",2,3.1416,56,("x","y","z"))
+Traceback (most recent call last):
+  File "<pyshell#9>", line 1, in <module>
+    tup2=([2,3,4("nombre","edad")],"a","nombre1",2,3.1416,56,("x","y","z"))
+TypeError: 'int' object is not callable
+tup2=([2,3,4,("nombre","edad")],"a","nombre1",2,3.1416,56,("x","y","z"))
+print(tup2[0][3][1])
+edad
+print (primos)
+(2, 3, 5, 7, 11, 13, 17, 23, 29)
+prim=(2,3,5,7,11,13,17,19,23,29)
+print(prim)
+(2, 3, 5, 7, 11, 13, 17, 19, 23, 29)
+print(prim[1:4])
+(3, 5, 7)
+print(prim[6:9])
+(17, 19, 23)
+print(prim[7:10])
+(19, 23, 29)
+print(prim[9])
+29
+a=prim[0:5]
+print(a)
+(2, 3, 5, 7, 11)
+b=prim[5:10]
+print(b)
+(13, 17, 19, 23, 29)
+>>> c
+Traceback (most recent call last):
+  File "<pyshell#23>", line 1, in <module>
+    c
+NameError: name 'c' is not defined
+>>> 
+
+... 
+>>> 
+
+>>> 
+
+... 
+... 
+>>> 
+
+>>> 
+
+... 
+>>> 
+
+... 
+>>> c
+Traceback (most recent call last):
+  File "<pyshell#30>", line 1, in <module>
+    c
+NameError: name 'c' is not defined
+>>> c=a+b
+>>> print(c)
+(2, 3, 5, 7, 11, 13, 17, 19, 23, 29)
+>>> print(prim.index[19])
+Traceback (most recent call last):
+  File "<pyshell#33>", line 1, in <module>
+    print(prim.index[19])
+TypeError: 'builtin_function_or_method' object is not subscriptable
+>>> print(c.index(23))
+8
+>>> print(prim.index(19))
+7
