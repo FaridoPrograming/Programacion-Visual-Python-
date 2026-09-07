@@ -1,0 +1,21 @@
+Python 3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+>>> set1={2,3.1416,"hola"}
+>>> type(set1)
+<class 'set'>
+>>> set1 = {2,4.5,"hola",(1,2,4),4,5}
+>>> print(set1)
+{'hola', 2, 4, 4.5, 5, (1, 2, 4)}
+>>> set1= {2,4.5,"hola",(1,2,4),4,5,5,4,2,4.5,}
+>>> print
+<built-in function print>
+>>> print(set1)
+{'hola', 2, 4, 4.5, 5, (1, 2, 4)}
+>>> set1={2,4.5,"hola",(1,2,4),4,5,[7,8,9]}
+Traceback (most recent call last):
+  File "<pyshell#7>", line 1, in <module>
+    set1={2,4.5,"hola",(1,2,4),4,5,[7,8,9]}
+TypeError: cannot use 'list' as a set element (unhashable type: 'list')
+>>> set1=set([2,3.14,"hola"])
+>>> print (set1)
+{'hola', 2, 3.14}

@@ -1,0 +1,46 @@
+Python 3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+cdco={"negro":0"cafe":1,"rojo":2}
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+cdco={"negro":0,"cafe":1,"rojo":2}
+type(cdco)
+<class 'dict'>
+cdco["naranja"]=3
+>>> print (cdco)
+{'negro': 0, 'cafe': 1, 'rojo': 2, 'naranja': 3}
+>>> cdco["amarillo"]=4
+>>> cdco["verde"]=5
+>>> cdco["azul"]=6
+>>> cdco["violeta"]=7
+>>> cdco["gris"]=8
+>>> cdco["blanco"]=9
+>>> print(cdco)
+{'negro': 0, 'cafe': 1, 'rojo': 2, 'naranja': 3, 'amarillo': 4, 'verde': 5, 'azul': 6, 'violeta': 7, 'gris': 8, 'blanco': 9}
+>>> print (cdco{"negro"})
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> print (cdco["negro"])
+0
+>>> print (cdco["amarillo"])
+4
+>>> print (cdco["naranja"])
+3
+>>> print (cdco["verde"])
+5
+>>> del cdco["negro"]
+>>> print (cdco)
+{'cafe': 1, 'rojo': 2, 'naranja': 3, 'amarillo': 4, 'verde': 5, 'azul': 6, 'violeta': 7, 'gris': 8, 'blanco': 9}
+>>> var=cdco.pop ("azul")
+>>> print(cdco)
+{'cafe': 1, 'rojo': 2, 'naranja': 3, 'amarillo': 4, 'verde': 5, 'violeta': 7, 'gris': 8, 'blanco': 9}
+>>> print (var)
+6
+>>> cdco.clear()
+>>> print (cdco)
+{}
+>>> num = {0:"zero", 1:"one", 2:"two", 3:"three", 4:"four", 5:"five", 6:"six", 7:"seven", 8:"eigth"}
+>>> print (num)
+{0: 'zero', 1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six', 7: 'seven', 8: 'eigth'}
+>>> list(reversed(num))
+[8, 7, 6, 5, 4, 3, 2, 1, 0]
+>>> list(reversed(num.values()))
+['eigth', 'seven', 'six', 'five', 'four', 'three', 'two', 'one', 'zero']
